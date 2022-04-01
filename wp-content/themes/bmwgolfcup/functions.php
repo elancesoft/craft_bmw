@@ -146,13 +146,23 @@ function bmwgolfcup_scripts()
 	wp_enqueue_style('bmwgolfcup-style', get_stylesheet_uri() . '?v=' . time(), array(), _S_VERSION);
 	wp_style_add_data('bmwgolfcup-style', 'rtl', 'replace');
 
+	wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', array(), _S_VERSION, true);
+	
 	wp_enqueue_script('bmwgolfcup-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
+	wp_enqueue_script('bmwgolfcup-customizer', get_template_directory_uri() . '/js/customizer.js?v='.time(), array(), _S_VERSION, true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
 }
 add_action('wp_enqueue_scripts', 'bmwgolfcup_scripts');
+
+
+function bmwgolfcup_admin_scripts($hook)
+{
+	wp_enqueue_script('custom-script', get_template_directory_uri() . '/js/custom-admin-script.js?v=' . time());
+}
+add_action('admin_enqueue_scripts', 'bmwgolfcup_admin_scripts');
 
 /**
  * Implement the Custom Header feature.
@@ -179,4 +189,69 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+
+
+function bmwgolfcup_on_wp_initialization()
+{
+	session_start();
+
+	global $pagenow;
+	$request_uri = $_SERVER['REQUEST_URI'];
+
+	$pos = strpos($request_uri, "wp-admin");
+
+	if (!$pos && $pagenow != 'wp-login.php' && $pagenow != 'login.php' && $pagenow != 'participant.php') {
+		if (!isset($_SESSION["bmwgolfcup_user_id"])) {
+			wp_safe_redirect( get_home_url() . '/login.php', 302);
+			exit();
+		}
+	}
+}
+add_action('init', 'bmwgolfcup_on_wp_initialization');
+
+/**
+ * Add the media popup to the page 'toplevel_page_participant'
+ */
+function page_enqueue_media_scripts()
+{
+	$screen = get_current_screen();
+	if ($screen->base == 'toplevel_page_participant') wp_enqueue_media();
+}
+add_action('admin_enqueue_scripts', 'page_enqueue_media_scripts');
+
+
+/**
+ * Replace the [username] in the_content
+ */
+function replace_text_wps($text){
+	$userObj = null;
+
+	if (isset($_SESSION["bmwgolfcup_user_id"])) {
+		$userObj = $_SESSION["participant"];
+	}
+
+
+	$replace = array(
+			// 'WORD TO REPLACE' => 'REPLACE WORD WITH THIS'
+			'[username]' => '<span class="font-bold">' . $userObj->name . '</span>'
+	);
+	$text = str_replace(array_keys($replace), $replace, $text);
+	return $text;
+}
+add_filter('the_content', 'replace_text_wps');
+
+
+/**
+ * Create website setting
+ */
+if (function_exists('acf_add_options_page')) {
+	acf_add_options_page(
+		array(
+			'page_title' => 'Website Settings',
+			'menu_title' => 'Website Settings',
+			'menu_slug' => 'website-settings',
+			'capability' => 'edit_posts'
+		)
+	);
 }
