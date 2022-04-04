@@ -5,15 +5,29 @@ jQuery(document).ready(function ($) {
 	var video_1 = document.getElementById('video_1');
 
 	var videoWorks = !!document.createElement('video').canPlayType;
-	var videoWorks_1 = !!document.createElement('video').canPlayType;
+	// var videoWorks_1 = !!document.createElement('video').canPlayType;
 	
 	if (videoWorks) {
-		video.controls = false;
+		// alert(video_1);
+		//if (video !== 'null' || video != 'undefined') video.controls = false;
+		// if (video_1 !== 'null' || video_1 != 'undefined') video_1.controls = false;
+
+		if (video == null) {
+			
+		} else {
+			video.controls = false;
+		}
+
+		if (video_1 == null) {
+			
+		} else {
+			video_1.controls = false;
+		}
 	}
 
-	if (videoWorks_1) {
-		video_1.controls = false;
-	}
+	// if (videoWorks_1) {
+	// 	video_1.controls = false;
+	// }
 
 
 	// Create button to play
@@ -27,7 +41,7 @@ jQuery(document).ready(function ($) {
 	});*/
 
 	// Click to the video to play
-	$(document).on('click', 'video', function () {
+	$(document).on('click', '.video', function () {
 		$(this).get(0).play();
 	});
 
