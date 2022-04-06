@@ -51,44 +51,65 @@ $loading_background = get_field('loading_background', 'option');
     $img_bg_init = get_template_directory_uri() . '/images/bg.png';
     echo '
     <style>
-    @keyframes images {
-      0% {
-        background-image: url("' . $img_bg_init . '");
-        background-repeat: no-repeat;
-        background-position: right bottom;
-        background-size: cover;
-        background-attachment: fixed;
-      }
-      
-      50% {
-        background-image: url("' . $img_bg_init . '");
-        background-repeat: no-repeat;
-        background-position: right bottom;
-        background-size: cover;
-        background-attachment: fixed;
-      }
-      
+
+    @keyframes gatdgN {
       100% {
-        background-image: url("' . $loading_background . '");
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: cover;
-        background-attachment: fixed;
+        opacity: 0;
       }
+      0% {
+          opacity: 1;
+      }
+    }
+
+    @keyframes ehzjup {
+      100% {
+        opacity: 1;
+        z-index: 2;
+      }
+      0% {
+          opacity: 0;
+      }
+    }
+
+    body.loading-image::before {
+      position: absolute;
+      content: "";
+      z-index: 1;
+      background-image: url(' . $loading_background . ');
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: cover;
+      background-attachment: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100vw;
+      height: 100vh;
+      animation: 0.5s ease-in-out 3s 1 normal both running gatdgN;
+    }
+    
+    body.loading-image {
+      background-image: url(' . $img_bg_init . ');
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .login-form {
+      animation: 0.5s ease-in-out 3s 1 normal both running ehzjup;
     }
     
     </style>
     ';
-    $bg_page = 'style="background-image:url(' . $loading_background . '); background-repeat: no-repeat; background-position: top left;background-size: cover; background-attachment: fixed; animation: images 3s linear 0s;"' ;
   }
-  
+
   ?>
 </head>
 
-<body class="h-screen w-full text-14 font-light text-white bg-site bg-fixed bg-cover bg-right-bottom" <?php echo $bg_page; ?>>
+<body class="h-screen w-full text-14 font-light text-white loading-image">
   <div class="max-w-md mx-auto px-4 h-screen w-full">
     <div class="h-screen w-full flex items-center justify-center">
-      <div class="justtify-center mb-[80px]">
+      <div class="justtify-center mb-[80px] login-form">
         <div class="flex items-center mb-[35px]"><?php the_custom_logo(); ?></div>
 
         <?php
