@@ -26,40 +26,13 @@
 	<script defer src="https://unpkg.com/alpinejs@3.9.1/dist/cdn.min.js"></script>
 
 	<?php wp_head(); ?>
-</head>
+	</head>
 
 <?php
 $featured_imgage = get_the_post_thumbnail_url(get_the_ID());
 $bg_page = '';
 if (strlen($featured_imgage) > 0) {
-	$img_bg_init = get_template_directory_uri() . '/images/bg.png';
-
-	echo '
-	<style>
-
-	@keyframes images {
-		0% {
-			background-image: url("' . $img_bg_init . '");
-			background-size: cover;
-			background-attachment: fixed;
-		}
-		
-		50% {
-			background-image: url("' . $img_bg_init . '");
-			background-size: cover;
-			background-attachment: fixed;
-		}
-		
-		100% {
-			background-image: url("' . $featured_imgage . '");
-			background-size: cover;
-			background-attachment: fixed;
-		}
-	}
-	
-	</style>
-	';
-	$bg_page = 'style="background-image:url(' . $featured_imgage . '); background-repeat: no-repeat; background-position: top left;background-size: cover; background-attachment: fixed; animation: images 3s linear 0s;"' ;
+	$bg_page = 'style="background: url(' . $featured_imgage . ') no-repeat top left; background-size: cover; background-attachment: fixed;"' ;
 }
 ?>
 

@@ -643,18 +643,6 @@ select {
     font-display: swap;
   }
 
-@font-face {
-    font-family: 'icon-bmw';
-    src:  url('fonts/icon-bmw.eot?tsccnd');
-    src:  url('fonts/icon-bmw.eot?tsccnd#iefix') format('embedded-opentype'),
-      url('fonts/icon-bmw.ttf?tsccnd') format('truetype'),
-      url('fonts/icon-bmw.woff?tsccnd') format('woff'),
-      url('fonts/icon-bmw.svg?tsccnd#icon-bmw') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -1270,107 +1258,86 @@ select {
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-[class^="bmw-icon"], [class*=" bmw-icon"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icon-bmw' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.bmw-iconaward:before {
-  content: "\e900";
-}
-.bmw-iconcontestinfo:before {
-  content: "\e901";
-}
-.bmw-icongolf:before {
-  content: "\e902";
-}
-.bmw-icongreeting:before {
-  content: "\e903";
-}
-.bmw-iconimage:before {
-  content: "\e904";
-}
-.bmw-iconleaderboard:before {
-  content: "\e905";
-}
-.bmw-iconrule:before {
-  content: "\e906";
-}
-.bmw-iconsponsor:before {
-  content: "\e907";
-}
 .placeholder\:font-light::-moz-placeholder {
   font-weight: 300;
 }
+
 .placeholder\:font-light:-ms-input-placeholder {
   font-weight: 300;
 }
+
 .placeholder\:font-light::placeholder {
   font-weight: 300;
 }
+
 .placeholder\:text-white::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
 .placeholder\:text-white:-ms-input-placeholder {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
 .placeholder\:text-white::placeholder {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
 .placeholder\:opacity-60::-moz-placeholder {
   opacity: 0.6;
 }
+
 .placeholder\:opacity-60:-ms-input-placeholder {
   opacity: 0.6;
 }
+
 .placeholder\:opacity-60::placeholder {
   opacity: 0.6;
 }
+
 .odd\:border-l-0:nth-child(odd) {
   border-left-width: 0px;
 }
+
 .hover\:scale-150:hover {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
+
 .hover\:border-opacity-100:hover {
   --tw-border-opacity: 1;
 }
+
 .hover\:opacity-60:hover {
   opacity: 0.6;
 }
+
 .hover\:opacity-100:hover {
   opacity: 1;
 }
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
 .group:hover .group-hover\:scale-150 {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
 .group:hover .group-hover\:font-bold {
   font-weight: 700;
 }
+
 @media (min-width: 768px) {
 
   .md\:py-0 {

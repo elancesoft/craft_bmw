@@ -31,6 +31,9 @@ if (isset($_POST['txtPhone'])) {
   }
 }
 
+// Get loading background
+$loading_background = get_field('loading_background', 'option');
+
 
 ?>
 <!DOCTYPE html>
@@ -42,9 +45,47 @@ if (isset($_POST['txtPhone'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri() . '?v=' . time(); ?>">
   <title>Login</title>
+
+  <?php
+  if (strlen($loading_background) > 0) {
+    $img_bg_init = get_template_directory_uri() . '/images/bg.png';
+    echo '
+    <style>
+    @keyframes images {
+      0% {
+        background-image: url("' . $img_bg_init . '");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      
+      50% {
+        background-image: url("' . $img_bg_init . '");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      
+      100% {
+        background-image: url("' . $loading_background . '");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    }
+    
+    </style>
+    ';
+    $bg_page = 'style="background-image:url(' . $loading_background . '); background-repeat: no-repeat; background-position: top left;background-size: cover; background-attachment: fixed; animation: images 3s linear 0s;"' ;
+  }
+  
+  ?>
 </head>
 
-<body class="h-screen w-full text-14 font-light text-white bg-site bg-fixed bg-cover bg-right-bottom">
+<body class="h-screen w-full text-14 font-light text-white bg-site bg-fixed bg-cover bg-right-bottom" <?php echo $bg_page; ?>>
   <div class="max-w-md mx-auto px-4 h-screen w-full">
     <div class="h-screen w-full flex items-center justify-center">
       <div class="justtify-center mb-[80px]">
