@@ -6,20 +6,20 @@ jQuery(document).ready(function ($) {
 
 	var videoWorks = !!document.createElement('video').canPlayType;
 	// var videoWorks_1 = !!document.createElement('video').canPlayType;
-	
+
 	if (videoWorks) {
 		// alert(video_1);
 		//if (video !== 'null' || video != 'undefined') video.controls = false;
 		// if (video_1 !== 'null' || video_1 != 'undefined') video_1.controls = false;
 
 		if (video == null) {
-			
+
 		} else {
 			video.controls = false;
 		}
 
 		if (video_1 == null) {
-			
+
 		} else {
 			video_1.controls = false;
 		}
@@ -43,6 +43,12 @@ jQuery(document).ready(function ($) {
 	// Click to the video to play
 	$(document).on('click', '.video', function () {
 		$(this).get(0).play();
+		$(this).addClass('playing');
+	});
+
+	$(document).on('click', '.video.playing', function () {
+		$(this).get(0).pause();
+		$(this).removeClass('playing');
 	});
 
 	// TAB 1 PROCESS
@@ -165,4 +171,28 @@ jQuery(document).ready(function ($) {
 			scrollTop: $("#leaderboard_item_found_tab5").offset().top
 		}, 1000);
 	});
+
+	$(document).on('click', '#menu_icon', function () {
+		$(this).toggleClass('open');
+	});
+
+	$(document).click(function (e) {
+		// Container contains popup
+		var container = $("ul#primary-menu");
+		var containerMenuIcon = $("#menu_icon");
+
+		if (!container.is(e.target) && container.has(e.target).length === 0) {
+			if (!containerMenuIcon.is(e.target) && containerMenuIcon.has(e.target).length === 0) {
+				let menuIcon = document.querySelector('#menu_icon');
+
+				if (menuIcon.classList.contains('open')) {
+					container.removeClass('menu');
+					container.addClass('close');
+
+					containerMenuIcon.removeClass('open');
+				}
+			}
+		}
+	});
 });
+

@@ -255,3 +255,13 @@ if (function_exists('acf_add_options_page')) {
 		)
 	);
 }
+
+/**
+ * Redirect 404 page to home page
+ */
+function redirect_404s() {
+	if(is_404()) {
+			wp_redirect(home_url(), '301');
+	}
+}
+add_action('wp_enqueue_scripts', 'redirect_404s');

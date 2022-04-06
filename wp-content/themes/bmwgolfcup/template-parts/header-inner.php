@@ -10,8 +10,8 @@
         <a href="<?php echo get_home_url(); ?>"><img src="<?php echo $image_logo[0]; ?>" class="h-[36px] w-auto" alt="Logo" /></a>
       </div>
 
-      <div class="flex items-center">
-        <img src="<?php echo $img_menu; ?>" class="cursor-pointer menu" onclick="els_menu(this)" />
+      <div class="flex items-center mr-4">
+        <img src="<?php echo $img_menu; ?>" id="menu_icon" class="cursor-pointer" onclick="els_menu(this)" />
       </div>
     </div><!-- .site-branding -->
 
@@ -19,11 +19,11 @@
       <?php
         $menu_items = wp_get_nav_menu_items('Main Menu');
 
-        echo '<ul id="primary-menu" class="py-3 absolute bg-site bg-right-bottom w-full top-[50px] left-0 right-0 transition-all ease-linear duration-700 close">';
+        echo '<ul id="primary-menu" class="z-[9999] py-3 absolute bg-site bg-right-bottom w-full top-[50px] left-0 right-0 transition-all ease-linear duration-700 close">';
 
         foreach ($menu_items as $item) {
           $menu_icon = get_field('menu_icon', $item->ID);
-          echo '<li class="px-5 py-2 opacity-60 hover:opacity-100 hover:font-bold transition-all duration-500"><a href="' . $item->url . '" class="flex gap-x-3 items-center"><img src="' . $menu_icon . '" class="h-[20px] w-auto" /><span>' . $item->title  . '</span></a></li>';
+          echo '<li class="px-5 py-2 hover:opacity-60 transition-all duration-500"><a href="' . $item->url . '" class="flex gap-x-3 items-center"><img src="' . $menu_icon . '" class="h-auto object-cover w-[24px]" /><span>' . $item->title  . '</span></a></li>';
         }
 
         echo '</ul>';

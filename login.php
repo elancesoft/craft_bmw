@@ -44,10 +44,10 @@ if (isset($_POST['txtPhone'])) {
   <title>Login</title>
 </head>
 
-<body class="h-screen w-full text-white bg-gradient-to-br from-blue-01 via-blue-00 to-green-00">
+<body class="h-screen w-full text-14 font-light text-white bg-site bg-fixed bg-cover bg-right-bottom">
   <div class="max-w-md mx-auto px-4 h-screen w-full">
     <div class="h-screen w-full flex items-center justify-center">
-      <div class="justtify-center">
+      <div class="justtify-center mb-[80px]">
         <div class="flex items-center mb-[35px]"><?php the_custom_logo(); ?></div>
 
         <?php

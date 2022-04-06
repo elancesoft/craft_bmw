@@ -44,15 +44,13 @@
 			list.classList.add('close')
 		);
 
-		e.classList.contains('menu') ? (
-			e.classList.remove('menu'),
-			e.classList.add('close')
+		list.classList.contains('menu') ? (
+			list.classList.remove('menu'),
+			list.classList.add('close')
 		) : (
-			e.classList.remove('close'),
-			e.classList.add('menu')
+			list.classList.remove('close'),
+			list.classList.add('menu')
 		);
-
-		
 	}
 </script>
 </body>

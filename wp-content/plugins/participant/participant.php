@@ -234,7 +234,7 @@ function participant()
           $str_media_id = $post->media_ids;
 
           $rank = !empty($post->rank) ? $post->rank : '-';
-          $category = !empty($post->category) ? $post->racategorynk : '-';
+          $category = !empty($post->category) ? $post->category : '-';
           $stableford = !empty($post->stableford) ? $post->stableford : '-';
           $new_perio = !empty($post->new_perio) ? $post->new_perio : '-';
           $stroke = !empty($post->stroke) ? $post->stroke : '-';

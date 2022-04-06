@@ -7,7 +7,7 @@
 get_header();
 ?>
 
-<main id="primary" class="mt-[34px] pb-[45px] font-normal">
+<main id="primary" class="mt-[34px] pb-[45px]">
   <?php
   while (have_posts()) :
     the_post();
@@ -207,7 +207,7 @@ get_header();
                 </tbody>
               </table>
             <?php else : ?>
-              <div class="text-center text-20">
+              <div class="text-center text-16">
                 해당 정보는 대회 종료 날짜인<br>
                 2022년 03월 21일 (월) 공개됩니다.
               </div>

@@ -33,7 +33,7 @@ $award_video_2 = get_field('award_video_2');
         $video_thumbnail = get_field('video_thumbnail', 'options');
         $award_video_1_html = '
       <h3 class="text-16 font-bold">환송사 영상</h3>
-      <video id="video" width="100%" height="160" controls class="video rounded-lg mt-4" poster="' . $video_thumbnail . '">
+      <video id="video" width="100%" height="160" controls class="video hover:cursor-pointer rounded-lg mt-4" poster="' . $video_thumbnail . '">
         <source src="' . $award_video_1 . '" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
         Your browser does not support the video tag.
@@ -49,7 +49,7 @@ $award_video_2 = get_field('award_video_2');
         $video_thumbnail = get_field('video_thumbnail', 'options');
         $award_video_2_html = '
       <h3 class="text-16 font-bold mt-[40px]">시상식 영상</h3>
-      <video id="video_1" width="100%" height="160" controls class="video rounded-lg mt-4" poster="' . $video_thumbnail . '">
+      <video id="video_1" width="100%" height="160" controls class="video hover:cursor-pointer rounded-lg mt-4" poster="' . $video_thumbnail . '">
         <source src="' . $award_video_2 . '" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
         Your browser does not support the video tag.

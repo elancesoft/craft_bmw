@@ -10,7 +10,7 @@ get_header();
 $menu_items = wp_get_nav_menu_items('Main Menu');
 ?>
 
-<main id="primary" class="mt-[34px] pb-[45px]">
+<main id="primary" class="mt-[34px] pb-[45px] px-4">
   <div class="grid grid-cols-2 gap-2">
     <?php
     foreach ($menu_items as $menu) :
