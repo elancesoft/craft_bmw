@@ -61,11 +61,11 @@ get_header();
         </tr>
         <tr>
           <td class="py-3 text-16 font-medium">출발 홀</td>
-          <td class="py-3 text-right">EAST 1번 홀</td>
+          <td class="py-3 text-right"><?php echo $participant->hole; ?></td>
         </tr>
         <tr>
           <td class="py-3 text-16 font-medium">참가부문</td>
-          <td class="py-3 text-right">선수</td>
+          <td class="py-3 text-right"><?php echo $participant->competition; ?></td>
         </tr>
       </table>
     </div>

@@ -18,6 +18,15 @@ get_header();
   <div class="grid grid-cols-2 mt-[24px]">
     <?php
     $sponsors = get_field('sponsor_list');
+
+    
+    // Add an empty sponsor to make good looking for the grid
+    if (sizeof($sponsors)%2 != 0 ) {
+      $sponsors[]['sponsor_image'] = '';
+      $sponsors[]['sponsor_url'] = '';
+    }
+
+    // Show the grid
     foreach($sponsors as $item) {
       echo '<div class="flex items-center justify-center p-8 border border-b-0 border-l odd:border-l-0 border-r-0 border-white border-opacity-10"><a href="' . $item['sponsor_url'] . '" target="_blank"><img src="' . $item['sponsor_image'] . '" alt="" /></a></div>';
     }
