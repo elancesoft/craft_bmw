@@ -122,7 +122,12 @@ jQuery(document).ready(function ($) {
       selection.map(function (attachment) {
         attachment = attachment.toJSON();
 
-        $("#obal").append("<div class='participant-image-wrap' style='position: relative;'><img style='height: 100px; width: auto; border: 1px solid #333;' src=" + attachment.url + "><input type='hidden' name='media[]' value='" + attachment.id + "' /><button type='button' class='btn-remove-img' style='position: absolute; right: 3px; top: 3px; color: red; cursor: pointer;font-size: 16px;'>x</button></div>");
+        if (attachment.type === 'image') {
+          $("#obal").append("<div class='participant-image-wrap' style='position: relative;'><img style='height: 100px; width: auto; border: 1px solid #333;' src=" + attachment.url + "><input type='hidden' name='media[]' value='" + attachment.id + "' /><button type='button' class='btn-remove-img' style='position: absolute; right: 3px; top: 3px; color: red; cursor: pointer;font-size: 16px;'>x</button></div>");
+        } else if (attachment.type === 'video') {
+          $("#obal").append("<div class='participant-image-wrap' style='position: relative;'><video style='height: 100px; width: auto; border: 1px solid #333;' controls><source src='"  + attachment.url +  "' type='" + attachment.mime + "'></video><input type='hidden' name='media[]' value='" + attachment.id + "' /><button type='button' class='btn-remove-img' style='position: absolute; right: 3px; top: 3px; color: red; cursor: pointer;font-size: 16px;'>x</button></div>");
+        }
+        
       });
     });
     custom_uploader.open();

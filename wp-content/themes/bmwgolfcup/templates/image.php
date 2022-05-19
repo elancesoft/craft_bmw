@@ -13,6 +13,8 @@ $mediaObj = $wpdb->get_row(
 $media_ids = array();
 $str_media_id = $mediaObj->media_ids;
 if (strlen(trim($str_media_id)) > 0) $media_ids = explode(',', $mediaObj->media_ids);
+
+$video_thumbnail = get_field('video_thumbnail', 'options');
 ?>
 <main id="primary" class="mt-[34px] pb-[45px]">
   <?php
@@ -52,11 +54,15 @@ $watch('open', value => {
             images: [
               <?php
               foreach ($media_ids as $index => $media) {
-                $attached = wp_get_attachment_image_src($media, 'full');
+                // $attached = wp_get_attachment_image_src($media, 'full');
+                $attachedURL = wp_get_attachment_url($media);
+                $type = wp_attachment_is('video', $media) ? "video" : "image";
+
                 echo "
                 {
-                  src: '" . $attached[0] . "',
-                  alt: 'Image " . $index . "'
+                  type: '" . $type . "',
+                  src: '" . $attachedURL . "',
+                  alt: 'Media " . $index . "'
                 },
                 ";
               }
@@ -67,7 +73,7 @@ $watch('open', value => {
                 <figure class="relative overflow-hidden" x-show="selected === index">
                   <!-- Header -->
                   <div class="relative flex items-center justify-center">
-                    <p class="p-2">사진 선택</p>
+                    <p class="p-2">크게보기</p>
                     <button @click="open = false" class="absolute right-4 top-3">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -75,12 +81,21 @@ $watch('open', value => {
                     </button>
                   </div>
 
+                  <!-- Video -->
+                  <template x-if="image.type == 'video'">
+                  <video :id="video_index" width="100%" height="150" class="video" controls poster="<?php echo $video_thumbnail; ?>">
+                    <source :src="image.src" type="video/mp4">
+                  </video>
+                  </template>
+
                   <!-- Image -->
-                  <img :key="index" class="h-64 w-full object-cover object-center" :src="image.src" :alt="image.alt">
+                  <template x-if="image.type == 'image'">
+                    <img :key="index" class="h-64 w-full object-cover object-center" :src="image.src" :alt="image.alt">
+                  </template>
 
                   <!-- Footer -->
                   <div class="bg-blue-00 text-white flex items-center justify-center p-3 rounded-bl-lg rounded-br-lg">
-                    <a :href="image.src" download>사진 다운로드</a>
+                    <a :href="image.src" download>다운로드</a>
                   </div>
 
                   <!-- Button Next & Previous -->
@@ -106,8 +121,17 @@ $watch('open', value => {
       <div class="grid grid-cols-2 gap-[1px] mt-[24px] bg-white p-[1px]">
         <?php
         foreach ($media_ids as $index => $media) {
-          $attached = wp_get_attachment_image_src($media, 'full');
-          echo '<div class="overflow-hidden"><img @click="open = true; selected = ' . $index . '" src="' . $attached[0] . '" class="cursor-pointer w-full h-[150px] object-cover hover:scale-150 transition-all duration-700" /></div>';
+          $attachedURL = wp_get_attachment_url($media);
+
+          if (wp_attachment_is('video', $media)) {
+            // Process for Video
+            echo '<div class="overflow-hidden bg-black"><video id="video_' . $index . '" @click="open = true; selected = ' . $index . '" class="cursor-pointer w-full h-[150px]" controls poster="' . $video_thumbnail . '"><source src="' . $attachedURL . '" type="video/mp4"></video></div>';
+          } else if (wp_attachment_is('image', $media)) {
+            // Process for Image
+            // $attached = wp_get_attachment_image_src($media, 'full');
+            echo '<div class="overflow-hidden"><img @click="open = true; selected = ' . $index . '" src="' . $attachedURL . '" class="cursor-pointer w-full h-[150px] object-cover hover:scale-150 transition-all duration-700" /></div>';
+          } else {
+          }
         }
         ?>
       </div>

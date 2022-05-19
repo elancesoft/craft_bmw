@@ -130,6 +130,7 @@ function participant()
       $html_current_media = '';
 
       if (!empty($uid)) {
+        // Show the list of the media (image/video) of this user (uid)
         $participant = $wpdb->get_row(
           'SELECT * FROM ' . $wpdb->prefix . 'participants' .
             ' WHERE id=' . $uid
@@ -144,14 +145,27 @@ function participant()
           if (strlen(trim($str_media_ids)) > 0) {
             $media_ids = explode(',', $str_media_ids);
             foreach ($media_ids as $media_id) {
-              $attached = wp_get_attachment_image_src($media_id);
-              $html_current_media .= '
-              <div class="participant-image-wrap" style="position: relative;">
-                <img style="height: 100px; width: auto; border: 1px solid #333;" src="' . $attached[0] . '">
-                <input type="hidden" name="media[]" value="' . $media_id . '" />
-                <button type="button" class="btn-remove-img" style="position: absolute; right: 3px; top: 3px; color: red; cursor: pointer;font-size: 16px;">x</button>
-              </div>
-              ';
+              $attachedURL = wp_get_attachment_url($media_id);
+
+              if (wp_attachment_is('video', $media_id)) {
+                $html_current_media .= '
+                <div class="participant-image-wrap" style="position: relative;">
+                <video style="height: 100px; width: auto; border: 1px solid #333;" controls><source src="' . $attachedURL . '" type="video/mp4"></video>
+                  <input type="hidden" name="media[]" value="' . $media_id . '" />
+                  <button type="button" class="btn-remove-img" style="position: absolute; right: 3px; top: 3px; color: red; cursor: pointer;font-size: 16px;">x</button>
+                </div>
+                ';
+              } else {
+                $html_current_media .= '
+                <div class="participant-image-wrap" style="position: relative;">
+                  <img style="height: 100px; width: auto; border: 1px solid #333;" src="' . $attachedURL . '">
+                  <input type="hidden" name="media[]" value="' . $media_id . '" />
+                  <button type="button" class="btn-remove-img" style="position: absolute; right: 3px; top: 3px; color: red; cursor: pointer;font-size: 16px;">x</button>
+                </div>
+                ';
+              }
+              // $attached = wp_get_attachment_image_src($media_id);
+              
             }
           }
         }
@@ -191,7 +205,7 @@ function participant()
       ';
       break;
 
-    default: /* --------- LIST ----------*/
+    default: /* --------- LIST ALL PARTICIPANT ----------*/
       $participants = $wpdb->get_results(
         'SELECT * FROM ' . $wpdb->prefix . 'participants ORDER BY id ASC'
       );
