@@ -60,21 +60,18 @@ switch ($action) {
   case 'image-process':
     $media = isset($_REQUEST['media']) ? $_REQUEST['media'] : null;
 
-    if (sizeof($media) > 0) {
-      $uid = isset($_REQUEST['uid']) ? $_REQUEST['uid'] : "";
-      $media = array_unique($media);
+    $uid = isset($_REQUEST['uid']) ? $_REQUEST['uid'] : "";
+    $media = array_unique($media);
 
-      $str_media = implode(',', $media);
-
-      $wpdb->update(
-        $wpdb->prefix . 'participants',
-        array(
-          'media_ids' => $str_media
-        ),
-        array('id' => $uid),
-        array('%s')
-      );
-    }
+    $str_media = implode(',', $media);
+    $wpdb->update(
+      $wpdb->prefix . 'participants',
+      array(
+        'media_ids' => $str_media
+      ),
+      array('id' => $uid),
+      array('%s')
+    );
 
     wp_redirect(admin_url('admin.php?page=participant'));
     break;
