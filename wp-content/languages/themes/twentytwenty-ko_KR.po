@@ -7,32 +7,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/3.0.0-rc.2\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
 "Language: ko_KR\n"
 "Project-Id-Version: Themes - Twenty Twenty\n"
 
 #: comments.php:127
-#, gp-priority: normal
 msgid "Comments are closed."
 msgstr "댓글이 닫혀있습니다."
 
 #: inc/starter-content.php:197
-#, gp-priority: normal
 msgid "Social Links Menu"
 msgstr "소셜 링크 메뉴"
 
 #: template-parts/content-cover.php:138 template-parts/content.php:48
-#, gp-priority: normal
 msgid "Pages:"
 msgstr "페이지:"
 
 #: template-parts/footer-menus-widgets.php:37
-#, gp-priority: normal
 msgid "Footer"
 msgstr "푸터"
 
 #: template-parts/content-cover.php:138 template-parts/content.php:48
-#, gp-priority: normal
 msgid "Page"
 msgstr "페이지"
 

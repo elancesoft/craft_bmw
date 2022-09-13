@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/3.0.0-rc.2\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
 "Language: ko_KR\n"
 "Project-Id-Version: Themes - Twenty Twenty-One\n"
 
@@ -17,125 +17,104 @@ msgid "Twenty Twenty-One is a blank canvas for your ideas and it makes the block
 msgstr "Twenty Twenty-One은 생각에 대한 빈 캔버스입니다. 블록 편집기를 최고의 붓으로 만듭니다. 새 블록 양식으로, 아름다운 배치 문제를 부차적으로 만들도록 해 줍니다. 이 테마의 부드러운 색상과 눈을 사로잡는 설계(여전히 변함없이)은 작업이 빛나게 해 줄 것입니다. 한 번 해 보세요! 이공이일이 포트폴리오, 사업 웹사이트, 또는 개인 블로그를 어떻게 좋게하는지 보세요."
 
 #. Theme Name of the theme
-#: inc/block-patterns.php:20
+#: inc/block-patterns.php:24
 #, gp-priority: high
 msgid "Twenty Twenty-One"
 msgstr "Twenty Twenty-One"
 
-#: inc/template-tags.php:245
-#, gp-priority: normal
+#: inc/template-tags.php:241
 msgid "Older <span class=\"nav-short\">posts</span>"
 msgstr "이전 <span class=\"nav-short\">글</span>"
 
-#: inc/template-tags.php:234
-#, gp-priority: normal
+#: inc/template-tags.php:230
 msgid "Newer <span class=\"nav-short\">posts</span>"
 msgstr "다음 <span class=\"nav-short\">글</span>"
 
 #: classes/class-twenty-twenty-one-customize-notice-control.php:40
 #: classes/class-twenty-twenty-one-dark-mode.php:178
-#, gp-priority: normal
 msgid "https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-support"
 msgstr "https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-support"
 
 #. translators: %s: Twenty Twenty-One support article URL.
 #: classes/class-twenty-twenty-one-dark-mode.php:177
-#, gp-priority: normal
 msgid "Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text. <a href=\"%s\">Learn more about Dark Mode.</a>"
 msgstr "어두운 모드는 기기에 따른 설정입니다. 방문자가 사이트에 요청하면, 사이트는 어두운 배경에 밝은 글자로 보일 것입니다. <a href=\"%s\">어두운 모드에 대해 더 알아보세요.</a>"
 
 #: classes/class-twenty-twenty-one-dark-mode.php:380
-#, gp-priority: normal
 msgid "This website uses LocalStorage to save the setting when Dark Mode support is turned on or off.<br> LocalStorage is necessary for the setting to work and is only used when a user clicks on the Dark Mode button.<br> No data is saved in the database or transferred."
 msgstr "이 웹사이트는 어두운 모드 지원을 켜거나 끌 때 로컬스토리지를 사용합니다.<br> 로컬스토리지는 설정이 작동되기 위해서는 필수이며 사용자가 어두운 모드 버튼을 클릭했을 때만 사용됩니다.<br> 어떤 데이터도 데이터베이스에 저장하거나 전송되지 않습니다."
 
 #: classes/class-twenty-twenty-one-dark-mode.php:379
-#, gp-priority: normal
 msgid "Suggested text:"
 msgstr "제안된 텍스트:"
 
 #: classes/class-twenty-twenty-one-dark-mode.php:378
-#, gp-priority: normal
 msgid "Twenty Twenty-One uses LocalStorage when Dark Mode support is enabled."
 msgstr "Twenty Twenty-One은 어두운 모드 지원이 활성화되었을 때 로컬스토리지를 사용합니다."
 
 #: classes/class-twenty-twenty-one-dark-mode.php:188
-#, gp-priority: normal
 msgid "Dark Mode support"
 msgstr "어두운 모드 지원"
 
 #: classes/class-twenty-twenty-one-customize-notice-control.php:41
-#, gp-priority: normal
 msgid "Learn more about Dark Mode."
 msgstr "어두운 모드에 대해 더 알아보기."
 
 #: classes/class-twenty-twenty-one-customize-notice-control.php:39
-#, gp-priority: normal
 msgid "To access the Dark Mode settings, select a light background color."
 msgstr "어두운 모드 설정에 접근하려면, 밝은 배경 색상을 선택하세요."
 
 #: classes/class-twenty-twenty-one-dark-mode.php:134
-#, gp-priority: normal
 msgid "Colors & Dark Mode"
 msgstr "색상 & 어두운 모드"
 
 #: inc/template-tags.php:77
-#, gp-priority: normal
 msgctxt "Label for sticky posts"
 msgid "Featured post"
 msgstr "특성 글"
 
 #: inc/template-functions.php:424
-#, gp-priority: normal
 msgctxt "Post password form"
 msgid "Submit"
 msgstr "제출"
 
 #: inc/template-functions.php:424
-#, gp-priority: normal
 msgctxt "Post password form"
 msgid "Password"
 msgstr "비밀번호"
 
 #: inc/template-functions.php:183
-#, gp-priority: normal
 msgctxt "Added to posts and pages that are missing titles"
 msgid "Untitled"
 msgstr "제목없음"
 
-#: inc/block-patterns.php:117
-#, gp-priority: normal
+#: inc/block-patterns.php:131
 msgctxt "Block pattern sample content"
 msgid "Cambridge, MA, 02139"
 msgstr "캠브릿지, 메사추세츠, 02139"
 
-#: inc/block-patterns.php:117
-#, gp-priority: normal
+#: inc/block-patterns.php:131
 msgctxt "Block pattern sample content"
 msgid "123 Main Street"
 msgstr "123 메인 거리"
 
-#: inc/block-patterns.php:117
-#, gp-priority: normal
+#: inc/block-patterns.php:131
 msgctxt "Block pattern sample content"
 msgid "123-456-7890"
 msgstr "123-456-7890"
 
-#: inc/block-patterns.php:117
-#, gp-priority: normal
+#: inc/block-patterns.php:131
 msgctxt "Block pattern sample content"
 msgid "example@example.com"
 msgstr "example@example.com"
 
 #: classes/class-twenty-twenty-one-customize.php:138
-#, gp-priority: normal
 msgctxt "Customizer control"
 msgid "Background color"
 msgstr "배경 색상"
 
 #. translators: %s: WordPress Version.
 #: inc/back-compat.php:42 inc/back-compat.php:61 inc/back-compat.php:86
-#, gp-priority: normal
 msgid "This theme requires WordPress 5.3 or newer. You are running version %s. Please upgrade."
 msgstr "이 테마는 워드프레스 5.3 이상이 필요합니다. 현재 버전은 %s입니다. 업그레이드 해주세요."
 
@@ -143,733 +122,597 @@ msgstr "이 테마는 워드프레스 5.3 이상이 필요합니다. 현재 버�
 #: image.php:48 template-parts/content/content-page.php:36
 #: template-parts/content/content-single.php:30
 #: template-parts/content/content.php:36
-#, gp-priority: normal
 msgid "Page %"
 msgstr "페이지 %"
 
 #: functions.php:187
-#, gp-priority: normal
 msgctxt "Font size"
 msgid "XXXL"
 msgstr "XXXL"
 
 #: functions.php:181
-#, gp-priority: normal
 msgctxt "Font size"
 msgid "XXL"
 msgstr "XXL"
 
 #: functions.php:175
-#, gp-priority: normal
 msgctxt "Font size"
 msgid "XL"
 msgstr "XL"
 
 #: functions.php:169
-#, gp-priority: normal
 msgctxt "Font size"
 msgid "L"
 msgstr "L"
 
 #: functions.php:163
-#, gp-priority: normal
 msgctxt "Font size"
 msgid "M"
 msgstr "M"
 
 #: functions.php:157
-#, gp-priority: normal
 msgctxt "Font size"
 msgid "S"
 msgstr "S"
 
 #: functions.php:151
-#, gp-priority: normal
 msgctxt "Font size"
 msgid "XS"
 msgstr "XS"
 
 #: comments.php:85
-#, gp-priority: normal
 msgid "Leave a comment"
 msgstr "댓글 달기"
 
 #. translators: %s: Comment count number.
 #: comments.php:39
-#, gp-priority: normal
 msgctxt "Comments title"
 msgid "%s comment"
 msgid_plural "%s comments"
 msgstr[0] "댓글 %s개"
 
 #: comments.php:34
-#, gp-priority: normal
 msgid "1 comment"
 msgstr "댓글 1개"
 
 #: classes/class-twenty-twenty-one-dark-mode.php:334
-#, gp-priority: normal
 msgid "On"
 msgstr "켬"
 
 #: classes/class-twenty-twenty-one-dark-mode.php:331
-#, gp-priority: normal
 msgid "Off"
 msgstr "끔"
 
 #. translators: %s: On/Off
 #: classes/class-twenty-twenty-one-dark-mode.php:321
-#, gp-priority: normal
 msgid "Dark Mode: %s"
 msgstr "어두운 모드: %s"
 
 #: inc/template-functions.php:422
-#, gp-priority: normal
 msgid "This content is password protected. Please enter a password to view."
 msgstr "이 콘텐츠는 비밀번호로 보호됩니다. 열람하려면 비밀번호를 입력하세요. "
 
 #: inc/menu-functions.php:34
-#, gp-priority: normal
 msgid "Open menu"
 msgstr "메뉴 열기"
 
-#: inc/block-patterns.php:107
-#, gp-priority: normal
+#: inc/block-patterns.php:121
 msgid "&#8220;Reading&#8221; by Berthe Morisot"
 msgstr "베르트 모리조의 &#8220;독서&#8221;"
 
-#: inc/block-patterns.php:84
-#, gp-priority: normal
+#: inc/block-patterns.php:98
 msgid "&#8220;Self portrait&#8221; by Berthe Morisot"
 msgstr "베르트 모리조의 &#8220;자화상&#8221;"
 
-#: inc/block-patterns.php:84
-#, gp-priority: normal
+#: inc/block-patterns.php:98
 msgid "&#8220;Daffodils&#8221; by Berthe Morisot"
 msgstr "베르트 모리조의 &#8220;수선화&#8221;"
 
-#: inc/block-patterns.php:72 inc/block-patterns.php:107
+#: inc/block-patterns.php:86 inc/block-patterns.php:121
 #: inc/starter-content.php:43
-#, gp-priority: normal
 msgid "&#8220;Roses Trémières&#8221; by Berthe Morisot"
 msgstr "베르트 모리조의 &#8220;접시꽃&#8221;"
 
 #: inc/template-functions.php:424
-#, gp-priority: normal
 msgctxt "Post password form"
 msgid "Enter"
 msgstr "엔터"
 
 #: inc/starter-content.php:128
-#, gp-priority: normal
 msgctxt "Theme starter content"
 msgid "Check out the Support Forums"
 msgstr "지원 포럼 확인"
 
 #: inc/starter-content.php:122
-#, gp-priority: normal
 msgctxt "Theme starter content"
 msgid "Read the Theme Documentation"
 msgstr "테마 문서 보기"
 
 #: inc/starter-content.php:112
-#, gp-priority: normal
 msgctxt "Theme starter content"
 msgid "Need help?"
 msgstr "도움이 필요하신가요?"
 
 #: inc/starter-content.php:97
-#, gp-priority: normal
 msgctxt "Theme starter content"
 msgid "Twenty Twenty-One also includes an overlap style for column blocks. With a Columns block selected, open the \"Styles\" panel within the Editor sidebar. Choose the \"Overlap\" block style to try it out."
 msgstr "Twenty Twenty-One은 컬럼 블록에 대해 오버랩 스타일도 포함합니다. 컬럼 블록을 선택한 상태에서 편집기 사이드바에서 “스타일” 패널을 엽니다. “오버랩” 블록 스타일을 선택해서 사용해보세요."
 
 #: inc/starter-content.php:93
-#, gp-priority: normal
 msgctxt "Theme starter content"
 msgid "Overlap columns"
 msgstr "컬럼 오버랩"
 
 #: inc/starter-content.php:87
-#, gp-priority: normal
 msgctxt "Theme starter content"
 msgid "Twenty Twenty-One includes stylish borders for your content. With an Image block selected, open the \"Styles\" panel within the Editor sidebar. Select the \"Frame\" block style to activate it."
 msgstr "Twenty Twenty-One은 콘텐츠에 세련된 테두리를 포함합니다. 이미지 블록을 선택한 상태에서 편집기 사이드바에서 “스타일” 패널을 엽니다. 활성화하려면 “프레임” 블록 스타일을 선택하세요."
 
 #: inc/starter-content.php:83
-#, gp-priority: normal
 msgctxt "Theme starter content"
 msgid "Frame your images"
 msgstr "이미지 프레임에 넣기"
 
 #: inc/starter-content.php:77
-#, gp-priority: normal
 msgctxt "Theme starter content"
 msgid "Block patterns are pre-designed groups of blocks. To add one, select the Add Block button [+] in the toolbar at the top of the editor. Switch to the Patterns tab underneath the search bar, and choose a pattern."
 msgstr "블록 패턴은 사전 디자인된 블록 그룹입니다. 추가하려면 편집기 상단에 있는 도구모음에서 블록 추가하기 버튼[+]을 선택하세요. 검색 바 밑에 있는 패턴 탭으로 전환한 후 패턴을  선택하세요."
 
 #: inc/starter-content.php:73
-#, gp-priority: normal
 msgctxt "Theme starter content"
 msgid "Add block patterns"
 msgstr "블록 패턴 추가"
 
 #: inc/starter-content.php:30 inc/starter-content.php:33
-#, gp-priority: normal
 msgctxt "Theme starter content"
 msgid "Create your website with blocks"
 msgstr "블록으로 웹사이트 만들기"
 
-#: inc/block-patterns.php:107
-#, gp-priority: normal
+#: inc/block-patterns.php:121
 msgid "Reading"
 msgstr "읽기"
 
-#: inc/block-patterns.php:107
-#, gp-priority: normal
+#: inc/block-patterns.php:121
 msgid "Young Woman in Mauve"
 msgstr "자줏빛의 젊은 여인"
 
-#: inc/block-patterns.php:107
-#, gp-priority: normal
+#: inc/block-patterns.php:121
 msgid "The Garden at Bougival"
 msgstr "부지발 정원"
 
-#: inc/block-patterns.php:107
-#, gp-priority: normal
+#: inc/block-patterns.php:121
 msgid "In the Bois de Boulogne"
 msgstr "불로뉴 숲"
 
-#: inc/block-patterns.php:107
-#, gp-priority: normal
+#: inc/block-patterns.php:121
 msgid "Villa with Orange Trees, Nice"
 msgstr "오렌지 나무와 저택, 니스"
 
-#: inc/block-patterns.php:107
-#, gp-priority: normal
+#: inc/block-patterns.php:121
 msgid "Roses Trémières"
 msgstr "접시꽃"
 
-#: inc/block-patterns.php:96
-#, gp-priority: normal
+#: inc/block-patterns.php:110
 msgid "&#8220;Villa with Orange Trees, Nice&#8221; by Berthe Morisot"
 msgstr "베르트 모리조의 &quot;오렌지 나무와 저택&quot;"
 
-#: inc/block-patterns.php:96
-#, gp-priority: normal
+#: inc/block-patterns.php:110
 msgid "Beautiful gardens painted by Berthe Morisot in the late 1800s"
 msgstr "베르트 모리조가 1800년대 후반에 그린 아름다운 정원"
 
-#: inc/block-patterns.php:96 inc/block-patterns.php:107
-#, gp-priority: normal
+#: inc/block-patterns.php:110 inc/block-patterns.php:121
 msgid "&#8220;The Garden at Bougival&#8221; by Berthe Morisot"
 msgstr "베르트 모리조의 &quot;부지발 정원&quot;"
 
-#: inc/block-patterns.php:72 inc/block-patterns.php:107
+#: inc/block-patterns.php:86 inc/block-patterns.php:121
 #: inc/starter-content.php:61
-#, gp-priority: normal
 msgid "&#8220;Young Woman in Mauve&#8221; by Berthe Morisot"
 msgstr "베르트 모리조의 &quot;자줏빛의 젊은 여인&quot;"
 
-#: inc/block-patterns.php:72 inc/block-patterns.php:107
+#: inc/block-patterns.php:86 inc/block-patterns.php:121
 #: inc/starter-content.php:51
-#, gp-priority: normal
 msgid "&#8220;In the Bois de Boulogne&#8221; by Berthe Morisot"
 msgstr "베르트 모리조의 &quot;불로뉴 숲&quot;"
 
-#: inc/block-patterns.php:60
-#, gp-priority: normal
+#: inc/block-patterns.php:74
 msgid "Berthe Morisot<br>(French, 1841-1895)"
 msgstr "베르트 모리조<br>(프랑스, 1841-1895)"
 
-#: inc/block-patterns.php:60
-#, gp-priority: normal
+#: inc/block-patterns.php:74
 msgid "Playing in the Sand"
 msgstr "모래놀이"
 
-#: inc/block-patterns.php:60
-#, gp-priority: normal
+#: inc/block-patterns.php:74
 msgid "&#8220;Playing in the Sand&#8221; by Berthe Morisot"
 msgstr "베르트 모리조의 &quot;모래놀이&quot;"
 
 #. translators: %s: Parent post.
 #: image.php:61
-#, gp-priority: normal
 msgid "Published in %s"
 msgstr "발행일 %s"
 
 #: classes/class-twenty-twenty-one-customize.php:108
-#, gp-priority: normal
 msgid "Summary"
 msgstr "요약"
 
 #: classes/class-twenty-twenty-one-customize.php:85
-#, gp-priority: normal
 msgid "Excerpt Settings"
 msgstr "요약 설정"
 
 #: inc/block-styles.php:98
-#, gp-priority: normal
 msgid "Thick"
 msgstr "두꺼움"
 
 #: classes/class-twenty-twenty-one-customize.php:106
-#, gp-priority: normal
 msgid "On Archive Pages, posts show:"
 msgstr "보관함 페이지에 보이는 글:"
 
 #. translators: %s: Author name.
 #: template-parts/post/author-bio.php:31
-#, gp-priority: normal
 msgid "View all of %s's posts."
 msgstr "%s 글 모두 보기."
 
 #. translators: %s: Author name.
 #: inc/template-tags.php:49 template-parts/post/author-bio.php:19
-#, gp-priority: normal
 msgid "By %s"
 msgstr "글쓴이 %s"
 
 #: template-parts/content/content-none.php:61
-#, gp-priority: normal
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "찾는 것이 없는 것 같습니다. 검색이 도움이 될 수도 있습니다."
 
 #: template-parts/content/content-none.php:56
-#, gp-priority: normal
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "죄송하지만, 검색어에 일치하는 것이 없습니다. 다른 키워드로 다시 시도하세요."
 
 #. translators: %s: Link to WP admin new post page.
 #: template-parts/content/content-none.php:43
-#, gp-priority: normal
 msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
 msgstr "첫 글을 발행할 준비가 되었나요? <a href=\"%s\">여기에서 시작하세요</a>."
 
 #: single.php:40
-#, gp-priority: normal
 msgid "Previous post"
 msgstr "이전 글"
 
 #: single.php:39
-#, gp-priority: normal
 msgid "Next post"
 msgstr "다음 글"
 
 #. translators: %s: Parent post link.
 #: single.php:25
-#, gp-priority: normal
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%s</span>"
 msgstr "<span class=\"meta-nav\">발행: </span><span class=\"post-title\">%s</span>"
 
 #: searchform.php:26
-#, gp-priority: normal
 msgctxt "submit button"
 msgid "Search"
 msgstr "검색"
 
 #: searchform.php:24
-#, gp-priority: normal
 msgid "Search&hellip;"
 msgstr "검색&hellip;"
 
 #. translators: %d: The number of search results.
 #: search.php:33
-#, gp-priority: normal
 msgid "We found %d result for your search."
 msgid_plural "We found %d results for your search."
 msgstr[0] "검색에서 %d개의 결과를 찾았습니다."
 
 #. translators: %s: Search term.
 #: search.php:21 template-parts/content/content-none.php:22
-#, gp-priority: normal
 msgid "Results for \"%s\""
 msgstr "\"%s\"의 검색 결과"
 
 #. translators: %s: List of tags.
-#: inc/template-tags.php:118 inc/template-tags.php:162
-#, gp-priority: normal
+#: inc/template-tags.php:116 inc/template-tags.php:158
 msgid "Tagged %s"
 msgstr "태그 %s"
 
 #. translators: %s: List of categories.
-#: inc/template-tags.php:108 inc/template-tags.php:152
-#, gp-priority: normal
+#: inc/template-tags.php:107 inc/template-tags.php:149
 msgid "Categorized as %s"
 msgstr "카테고리 %s"
 
 #. translators: Used between list items, there is a space after the comma.
-#: inc/template-tags.php:104 inc/template-tags.php:114
-#: inc/template-tags.php:148 inc/template-tags.php:158
-#, gp-priority: normal
+#: functions.php:654
 msgid ", "
 msgstr ", "
 
-#. translators: %s: Name of current post. Only visible to screen readers.
-#: image.php:70 image.php:95 inc/template-tags.php:92 inc/template-tags.php:135
+#. translators: %s: Post title. Only visible to screen readers.
+#: image.php:70 image.php:95 inc/template-tags.php:92 inc/template-tags.php:133
 #: template-parts/content/content-page.php:48
-#, gp-priority: normal
 msgid "Edit %s"
 msgstr "%s 편집"
 
-#. translators: %s: Name of current post.
+#. translators: %s: Post title. Only visible to screen readers.
 #: inc/template-functions.php:138
-#, gp-priority: normal
 msgid "Continue reading %s"
 msgstr "%s 계속 읽기"
 
 #: inc/block-styles.php:71
-#, gp-priority: normal
 msgid "Dividers"
 msgstr "분리자"
 
 #: inc/block-styles.php:62
-#, gp-priority: normal
 msgid "Frame"
 msgstr "프레임"
 
 #: inc/block-styles.php:35 inc/block-styles.php:44 inc/block-styles.php:53
 #: inc/block-styles.php:80 inc/block-styles.php:89
-#, gp-priority: normal
 msgid "Borders"
 msgstr "테두리"
 
 #: inc/block-styles.php:26
-#, gp-priority: normal
 msgid "Overlap"
 msgstr "오버랩"
 
-#: inc/block-patterns.php:116
-#, gp-priority: normal
+#: inc/block-patterns.php:130
 msgctxt "Block pattern description"
 msgid "A block with 3 columns that display contact information and social media links."
 msgstr "연락 정보와 소셜 미디어 링크가 있는 3 컬럼이 있는 블록."
 
-#: inc/block-patterns.php:114
-#, gp-priority: normal
+#: inc/block-patterns.php:128
 msgid "Contact information"
 msgstr "연락 정보"
 
-#: inc/block-patterns.php:106
-#, gp-priority: normal
+#: inc/block-patterns.php:120
 msgctxt "Block pattern description"
 msgid "A list of projects with thumbnail images."
 msgstr "썸네일 이미지가 있는 프로젝트 목록."
 
-#: inc/block-patterns.php:104
-#, gp-priority: normal
+#: inc/block-patterns.php:118
 msgid "Portfolio list"
 msgstr "포트폴리오 목록"
 
-#: inc/block-patterns.php:95
-#, gp-priority: normal
+#: inc/block-patterns.php:109
 msgctxt "Block pattern description"
 msgid "An overlapping columns block with two images and a text description."
 msgstr "두 개의 이미지와 텍스트 설명이 있는 오버랩 컬럼 블록."
 
-#: inc/block-patterns.php:92
-#, gp-priority: normal
+#: inc/block-patterns.php:106
 msgid "Overlapping images and text"
 msgstr "오버랩 이미지와 텍스트"
 
-#: inc/block-patterns.php:83
-#, gp-priority: normal
+#: inc/block-patterns.php:97
 msgctxt "Block pattern description"
 msgid "A media & text block with a big image on the left and a smaller one with bordered frame on the right."
 msgstr "왼쪽에 큰 이미지가 있고 오른쪽에 테두리의 작은 이미지가 있는 미디어 및 텍스트 블록."
 
-#: inc/block-patterns.php:80
-#, gp-priority: normal
+#: inc/block-patterns.php:94
 msgid "Two images showcase"
 msgstr "두 이미지 쇼케이스"
 
-#: inc/block-patterns.php:71
-#, gp-priority: normal
+#: inc/block-patterns.php:85
 msgctxt "Block pattern description"
 msgid "Three images inside an overlapping columns block."
 msgstr "오버랩 컬럼 블록 안의 세 개의 이미지."
 
-#: inc/block-patterns.php:68
-#, gp-priority: normal
+#: inc/block-patterns.php:82
 msgid "Overlapping images"
 msgstr "오버랩 이미지"
 
-#: inc/block-patterns.php:59
-#, gp-priority: normal
+#: inc/block-patterns.php:73
 msgctxt "Block pattern description"
 msgid "A Media & Text block with a big image on the left and a heading on the right. The heading is followed by a separator and a description paragraph."
 msgstr "왼쪽에 큰 이미지와 오른쪽에 제목이 있는 미디어 및 텍스트 블록. 제목 아래에 분리자와 설명 문단이 있음."
 
-#: inc/block-patterns.php:56
-#, gp-priority: normal
+#: inc/block-patterns.php:70
 msgid "Media and text article title"
 msgstr "미디어와 텍스트 글 제목"
 
-#: inc/block-patterns.php:48
-#, gp-priority: normal
+#: inc/block-patterns.php:62
 msgid "example@example.com"
 msgstr "example@example.com"
 
-#: inc/block-patterns.php:48
-#, gp-priority: normal
+#: inc/block-patterns.php:62
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: inc/block-patterns.php:48
-#, gp-priority: normal
+#: inc/block-patterns.php:62
 msgid "Instagram"
 msgstr "인스타그램"
 
-#: inc/block-patterns.php:48
-#, gp-priority: normal
+#: inc/block-patterns.php:62
 msgid "Twitter"
 msgstr "트위터"
 
-#: inc/block-patterns.php:48
-#, gp-priority: normal
+#: inc/block-patterns.php:62
 msgid "Let&#8217;s Connect."
 msgstr "연결하기"
 
-#: inc/block-patterns.php:47
-#, gp-priority: normal
+#: inc/block-patterns.php:61
 msgctxt "Block pattern description"
 msgid "A huge text followed by social networks and email address links."
 msgstr "큰 텍스트 아래에 소셜 네트워크 및 이메일 주소 링크."
 
-#: inc/block-patterns.php:44
-#, gp-priority: normal
+#: inc/block-patterns.php:58
 msgid "Links area"
 msgstr "링크 영역"
 
-#: inc/block-patterns.php:36
-#, gp-priority: normal
+#: inc/block-patterns.php:50
 msgid "A new portfolio default theme for WordPress"
 msgstr "워드프레스용 새 포트폴리오 기본 테마"
 
-#: inc/block-patterns.php:33
-#, gp-priority: normal
+#: inc/block-patterns.php:47
 msgid "Large text"
 msgstr "큰 텍스트"
 
 #: image.php:83
-#, gp-priority: normal
 msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "전체 크기"
 
 #. translators: %s: Publish date.
 #: inc/template-tags.php:29
-#, gp-priority: normal
 msgid "Published %s"
 msgstr "발행일 %s"
 
-#: comments.php:61 image.php:45 inc/template-tags.php:228
+#: comments.php:61 image.php:45 inc/template-tags.php:224
 #: template-parts/content/content-page.php:33
 #: template-parts/content/content-single.php:27
 #: template-parts/content/content.php:33
-#, gp-priority: normal
 msgid "Page"
 msgstr "페이지"
 
 #: template-parts/header/site-nav.php:19
-#, gp-priority: normal
 msgid "Close"
 msgstr "닫기"
 
 #: template-parts/header/site-nav.php:16
-#, gp-priority: normal
 msgid "Menu"
 msgstr "메뉴"
 
 #: functions.php:76 inc/starter-content.php:154
 #: template-parts/header/site-nav.php:13
-#, gp-priority: normal
 msgid "Primary menu"
 msgstr "주 메뉴"
 
 #: header.php:26
-#, gp-priority: normal
 msgid "Skip to content"
 msgstr "콘텐츠로 바로가기"
 
 #: functions.php:363
-#, gp-priority: normal
 msgid "Add widgets here to appear in your footer."
 msgstr "여기에 위젯을 추가하면 푸터에 나타납니다."
 
 #: functions.php:361
-#, gp-priority: normal
 msgid "Footer"
 msgstr "푸터"
 
 #: functions.php:309
-#, gp-priority: normal
 msgid "Red to purple"
 msgstr "빨간색에서 보라색으로"
 
 #: functions.php:304
-#, gp-priority: normal
 msgid "Purple to red"
 msgstr "보라색에서 빨간색으로"
 
 #: functions.php:299
-#, gp-priority: normal
 msgid "Yellow to red"
 msgstr "노란색에서 빨간색으로"
 
 #: functions.php:294
-#, gp-priority: normal
 msgid "Red to yellow"
 msgstr "빨간색에서 노란색으로"
 
 #: functions.php:289
-#, gp-priority: normal
 msgid "Yellow to green"
 msgstr "노란색에서 녹색으로"
 
 #: functions.php:284
-#, gp-priority: normal
 msgid "Green to yellow"
 msgstr "녹색에서 노란색으로"
 
 #: functions.php:279
-#, gp-priority: normal
 msgid "Yellow to purple"
 msgstr "노란색에서 보라색으로"
 
 #: functions.php:274
-#, gp-priority: normal
 msgid "Purple to yellow"
 msgstr "보라색에서 노란색으로"
 
 #: functions.php:263
-#, gp-priority: normal
 msgid "White"
 msgstr "흰색"
 
 #: functions.php:258
-#, gp-priority: normal
 msgid "Yellow"
 msgstr "노란색"
 
 #: functions.php:253
-#, gp-priority: normal
 msgid "Orange"
 msgstr "주황색"
 
 #: functions.php:248
-#, gp-priority: normal
 msgid "Red"
 msgstr "빨간색"
 
 #: functions.php:243
-#, gp-priority: normal
 msgid "Purple"
 msgstr "보라색"
 
 #: functions.php:238
-#, gp-priority: normal
 msgid "Blue"
 msgstr "파란색"
 
 #: functions.php:233
-#, gp-priority: normal
 msgid "Green"
 msgstr "녹색"
 
 #: functions.php:228
-#, gp-priority: normal
 msgid "Gray"
 msgstr "회색"
 
 #: functions.php:223 inc/block-styles.php:107
-#, gp-priority: normal
 msgid "Dark gray"
 msgstr "어두운 회색"
 
 #: functions.php:218
-#, gp-priority: normal
 msgid "Black"
 msgstr "검정색"
 
 #: functions.php:186
-#, gp-priority: normal
 msgid "Gigantic"
 msgstr "엄청 커다람"
 
 #: functions.php:180
-#, gp-priority: normal
 msgid "Huge"
 msgstr "엄청 큼"
 
 #: functions.php:174
-#, gp-priority: normal
 msgid "Extra large"
 msgstr "매우 큼"
 
 #: functions.php:168
-#, gp-priority: normal
 msgid "Large"
 msgstr "큼"
 
 #: functions.php:162
-#, gp-priority: normal
 msgid "Normal"
 msgstr "보통"
 
 #: functions.php:156
-#, gp-priority: normal
 msgid "Small"
 msgstr "작음"
 
 #: functions.php:150
-#, gp-priority: normal
 msgid "Extra small"
 msgstr "더 작음"
 
 #. translators: %s: WordPress.
 #: footer.php:67
-#, gp-priority: normal
 msgid "Proudly powered by %s."
 msgstr "%s로 제작."
 
 #: footer.php:24 functions.php:77 inc/starter-content.php:165
-#, gp-priority: normal
 msgid "Secondary menu"
 msgstr "부 메뉴"
 
 #: comments.php:78
-#, gp-priority: normal
 msgid "Comments are closed."
 msgstr "댓글이 닫혔습니다."
 
 #: comments.php:70
-#, gp-priority: normal
 msgid "Newer comments"
 msgstr "다음 댓글"
 
 #: comments.php:66
-#, gp-priority: normal
 msgid "Older comments"
 msgstr "이전 댓글"
 
 #: classes/class-twenty-twenty-one-customize.php:109
-#, gp-priority: normal
 msgid "Full text"
 msgstr "전체 텍스트"
 
 #: classes/class-twenty-twenty-one-customize.php:75
-#, gp-priority: normal
 msgid "Display Site Title & Tagline"
 msgstr "사이트 제목 & 태그라인 표시"
 
 #: 404.php:21
-#, gp-priority: normal
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "이 위치에서 아무것도 발견하지 못한것으로 보이네요. 검색해보시는 것을 어떨까요?"
 
 #: 404.php:16 template-parts/content/content-none.php:30
-#, gp-priority: normal
 msgid "Nothing here"
 msgstr "여기에 아무것도 없습니다"
 
