@@ -35,7 +35,7 @@ $introduce_tournament_process = get_field('introduce_tournament_process'); // im
     if (strlen($introduce_world_final) > 0) {
       $video_thumbnail = get_field('video_thumbnail', 'options');
       $introduce_world_final_html = '
-      <h3 class="text-14 font-bold">WORLD FINAL</h3>
+      <h3 class="text-14 font-bold">BMW GOLF CUP</h3>
       <video id="video" width="100%" height="160" controls class="video hover:cursor-pointer rounded-lg mt-4" poster="' . $video_thumbnail . '">
         <source src="' . $introduce_world_final . '" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
